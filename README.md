@@ -18,7 +18,6 @@
 - [Redux toolkit](https://redux-toolkit.js.org/)
 - [RTK-Query](https://redux-toolkit.js.org/rtk-query/overview/)
 - [Styled-components](https://styled-components.com/)
-- [Storybook](https://storybook.js.org/tutorials/intro-to-storybook/react/en/simple-component/)
 
 ### Основные команды
 | Command           | Description                                                |
