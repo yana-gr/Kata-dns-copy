@@ -1,0 +1,22 @@
+name: Project CI
+on: push
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get code
+        uses: actions/checkout@v3
+      - name: install deps
+        run: npm ci
+      - name: check lint
+        run: npm run lint
+  build:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - name: get code
+        uses: actions/checkout@v3
+      - name: install deps
+        run: npm ci
+      - name: check lint
+        run: npm run build
