@@ -67,5 +67,6 @@ Json server предоставляет нам полноценный локал�
 
 [Json server for beginners](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhc9YZIdqNL5sWeTCGxF4ya)
 
-[Локальный сервер для проектов и тестирования](https://www.youtube.com/watch?v=odwOkxkmVH8)
+[Локальный сервер для проектов и тестирования](https://www.youtube.com/watch?v=odwOkxkmVH8).
+
 
