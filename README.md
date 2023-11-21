@@ -17,7 +17,7 @@
 - [Typescript](https://www.typescriptlang.org/docs/)
 - [Redux toolkit](https://redux-toolkit.js.org/)
 - [RTK-Query](https://redux-toolkit.js.org/rtk-query/overview/)
-- [Modules Stylesheet](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/)
+- [Styled-components](https://styled-components.com/)
 
 ### Основные команды
 | Command           | Description                                                |
