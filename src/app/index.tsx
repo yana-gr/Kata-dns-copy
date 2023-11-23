@@ -1,3 +1,5 @@
+import '../styles/fonts.scss'
+
 const App = () => {
 
   return (
