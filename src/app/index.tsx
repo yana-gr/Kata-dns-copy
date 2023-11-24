@@ -1,13 +1,12 @@
 import { RouterProvider } from 'react-router-dom'
 import { router } from './routing/Routing';
-import React from "react";
-
+import React from 'react';
 
 const App = () => {
   return (
- <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
   );
 }
 
