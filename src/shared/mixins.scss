@@ -1,0 +1,9 @@
+@import '../shared/fonts.scss';
+@mixin setFont($family, $weight) {
+  font-family: $family;
+  font-weight: $weight;
+}
+
+@mixin bodyFont($weight: 400) {
+  @include setFont('PT Sans', $weight);
+}
