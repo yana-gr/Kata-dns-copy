@@ -2,7 +2,7 @@ import '../shared/base.scss';
 const App = () => {
   return (
     <>
-      <h1>hello wrold</h1>
+      <h1>hello world</h1>
     </>
   );
 };
