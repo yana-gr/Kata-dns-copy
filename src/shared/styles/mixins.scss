@@ -1,12 +1,6 @@
-@import '../shared/fonts.scss';
 @import './fonts.scss';
 
-@mixin fontRegular {
+@mixin font($weight) {
   font-family: 'PT Sans';
-  font-weight: 400;
-}
-
-@mixin fontBold {
-  font-family: 'PT Sans';
-  font-weight: 700;
+  font-weight: $weight;
 }
