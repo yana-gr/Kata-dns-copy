@@ -1,5 +1,6 @@
-@import '../styles/mixins.scss';
+@import './mixins.scss';
 
 body {
-  @include font(400);
+  font-family: 'PT Sans';
+  font-weight: 400;
 }

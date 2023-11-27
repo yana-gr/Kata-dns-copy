@@ -7,6 +7,7 @@ const App = () => {
   return (
     <React.StrictMode>
       <RouterProvider router={router} />
+      <p>sddsdd</p>
     </React.StrictMode>
   );
 };
