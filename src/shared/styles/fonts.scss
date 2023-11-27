@@ -1,0 +1,4 @@
+@import './mixins.scss';
+
+@include fontFace('PT Sans', 'normal', 400, '../app/fonts/PTSans-Regular.woff', '../app/fonts/PTSans-Regular.woff2');
+@include fontFace('PT Sans', 'normal', 700, '../app/fonts/PTSans-Bold.woff', '../app/fonts/PTSans-Bold.woff2');
