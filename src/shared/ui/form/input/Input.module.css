@@ -33,3 +33,16 @@
 }
 
 
+.errorInput {
+  border: 1px solid #cc2e12;
+}
+.errorMessage{
+  color: #cc2e12;
+  border-radius: 8px;
+  background: #ffebea;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .2px;
+  padding: 12px 12px 12px 17px;
+  margin-bottom: 20px;
+}

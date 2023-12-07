@@ -1,7 +1,7 @@
 import styles from './vacancies.module.css';
-import MenuButtons from './menuButtons';
-import VacanciesQuestionnaire from './vacanciesQuestionnaire';
-import Searchvacansies from './searchvacansies';
+import MenuButtons from '../features/asideMenuButtons/menuButtons';
+import VacanciesQuestionnaire from '../features/vacancies/vacanciesQuestionnaire';
+import Searchvacansies from '../features/vacancies/searchvacansies';
 
 const Vacancies = () => {
   return (

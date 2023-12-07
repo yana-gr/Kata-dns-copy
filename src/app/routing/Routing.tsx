@@ -1,7 +1,7 @@
 import Main from 'pages/main';
-import { Vacancies } from 'pages/vacancies/vacancies';
-import { VacanciesForm } from 'pages/vacancies/vacanciesform';
-import { VacanciesPage } from 'pages/vacancies/vacansiesPage';
+import { Vacancies } from 'widgets/vacancies';
+import { VacanciesForm } from 'features/vacancies/vacanciesform';
+import { VacanciesPage } from 'features/vacancies/vacansiesPage';
 import {
   createBrowserRouter,
 } from 'react-router-dom';

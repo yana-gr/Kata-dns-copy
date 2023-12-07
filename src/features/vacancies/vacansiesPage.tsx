@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import MenuButtons from './menuButtons';
+import MenuButtons from '../asideMenuButtons/menuButtons';
 import { GoBackButton } from '../../shared/ui/form/buttons/gobackbutton';
 import styles from './vacansiesPage.module.css';
 import { useGetVacansiesQuery } from 'shared/api/vacansiesSlice';

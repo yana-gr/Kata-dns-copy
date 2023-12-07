@@ -39,6 +39,17 @@
   font-size: 12px;
   line-height: 16px;
 }
+.errorMessage{
+  color: #cc2e12;
+  border-radius: 8px;
+  background: #ffebea;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .2px;
+  padding: 12px 12px 12px 17px;
+  margin-bottom: 20px;
+}
+
 @media (min-width: 992px) {
 .wrapper{
     display: flex;

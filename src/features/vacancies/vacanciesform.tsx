@@ -1,7 +1,7 @@
 import { Input } from 'shared/ui/form/input/Input';
 import { GoBackButton } from '../../shared/ui/form/buttons/gobackbutton';
 import styles from './vacanciesform.module.css';
-import MenuButtons from './menuButtons';
+import MenuButtons from '../asideMenuButtons/menuButtons';
 import Select from 'react-select';
 import { useGetVacansiesQuery } from 'shared/api/vacansiesSlice';
 import { createStyles } from '@mui/material';
@@ -27,7 +27,14 @@ interface Form {
   email?: string;
   born?: string;
   birthday?: string;
-  
+  cites?: string;
+  education?: string;
+  deferredEnlistmentCertificate?: boolean;
+  militaryID?: boolean;
+  passport?: boolean;
+  pol?: string;
+  vacancies?: string;
+  work?: string;
 }
 
 const getValue = (value: string | undefined, options: OptionType[]) => {
@@ -93,12 +100,11 @@ const VacanciesForm = () => {
         </p>
         <form onSubmit={handleSubmit(submitFormVacancies)}>
           <h3 className={styles.title}>Основная информация</h3>
-          <Input type={'text'} names={'name'} placeholder={'Имя'} register={register} />
-          {errors.name && <p>{errors.name.message}</p>}
-          <Input type={'text'} names={'secondName'} placeholder={'Фамилия'} register={register} />
-          <Input type={'phone'} names={'phone'} placeholder={'Телефон'} register={register} />
-          <Input type={'email'} names={'email'} placeholder={'Электронная почта'} register={register} />
-          <Input type={'date'} names={'birthday'} placeholder={'Дата рождения'} register={register} />
+          <Input type={'text'} names={'name'} placeholder={'Имя'} register={register} errors={errors} />
+          <Input type={'text'} names={'secondName'} placeholder={'Фамилия'} register={register} errors={errors} />
+          <Input type={'phone'} names={'phone'} placeholder={'Телефон'} register={register} errors={errors} />
+          <Input type={'email'} names={'email'} placeholder={'Электронная почта'} register={register} errors={errors} />
+          <Input type={'date'} names={'birthday'} placeholder={'Дата рождения'} register={register} errors={errors} />
           <Controller
             control={control}
             name='cites'
@@ -111,11 +117,11 @@ const VacanciesForm = () => {
                   value={getValue(value, optionsCites)}
                   onChange={ (newValue) => onChange((newValue as IOption).value)}
                   />
-                {error && <div>{error.message}</div>}
+                {error && <div className={styles.errorMessage}>{error.message}</div>}
               </div>
          )}
           />
-          <Input type={'text'} names={'born'} placeholder={'Гражданство'} register={register} />
+          <Input type={'text'} names={'born'} placeholder={'Гражданство'} register={register} errors={errors} />
           <div className={styles.radiobuttons}>
             
             <Controller
@@ -123,10 +129,10 @@ const VacanciesForm = () => {
               name='pol'
               render={({ field: { onChange, value } }) => (
                 <RadioButton
-                title={'Мужчина'}
-                name={'man'}
-                onChange={onChange}
-                value={value}
+                  title={'Мужчина'}
+                  name={'man'}
+                  onChange={onChange}
+                  value={value}
                 />
             )}
           />
@@ -136,10 +142,10 @@ const VacanciesForm = () => {
               name='pol'
               render={({ field: { onChange, value } }) => (
                 <RadioButton
-                title={'Женщина'}
-                name={'woman'}
-                onChange={onChange}
-                value={value}
+                  title={'Женщина'}
+                  name={'woman'}
+                  onChange={onChange}
+                  value={value}
                 />
             )}
           />
@@ -158,21 +164,21 @@ const VacanciesForm = () => {
                   value={getValue(value, optionsVacancies)}
                   onChange={ (newValue) => onChange((newValue as IOption).value)}
                   />
-                {error && <div>{error.message}</div>}
+                {error && <div className={styles.errorMessage}>{error.message}</div>}
               </div>
          )}
          />
           <div className={styles.radiobuttons}>
             
-             <Controller
+            <Controller
               control={control}
               name='work'
               render={({ field: { onChange, value } }) => (
                 <RadioButton
-                title={'Нет опыта'}
-                name={'nowork'}
-                onChange={onChange}
-                value={value}
+                  title={'Нет опыта'}
+                  name={'nowork'}
+                  onChange={onChange}
+                  value={value}
                 />
             )}
           />
@@ -182,10 +188,10 @@ const VacanciesForm = () => {
               name='work'
               render={({ field: { onChange, value } }) => (
                 <RadioButton
-                title={'Есть Опыт'}
-                name={'havework'}
-                onChange={onChange}
-                value={value}
+                  title={'Есть Опыт'}
+                  name={'havework'}
+                  onChange={onChange}
+                  value={value}
                 />
             )}
           />
@@ -204,54 +210,49 @@ const VacanciesForm = () => {
                   value={getValue(value, optionsEducation)}
                   onChange={ (newValue) => onChange((newValue as IOption).value)}
                   />
-                {error && <div>{error.message}</div>}
+                {error && <div className={styles.errorMessage}>{error.message}</div>}
               </div>
          )}
          />
           <h3 className={styles.title}>Дополнительная информация</h3>
           <Controller
-        control={control}
-        name='passport'
-        defaultValue={false}
-        render={({ field: { onChange, value } }) => (
-          <CheckboxButton
-            title={'Паспорт РФ'}
-            name={'passport'}
-            onChange={onChange}
-            value={value}
+            control={control}
+            name='passport'
+            defaultValue={false}
+            render={({ field: { onChange } }) => (
+              <CheckboxButton
+                title={'Паспорт РФ'}
+                name={'passport'}
+                onChange={onChange}
           />
         )}
       />
 
-<Controller
+          <Controller
             control={control}
             name='militaryID'
             defaultValue={false}
             render={({ field: { onChange } }) => (
               <CheckboxButton
-              title={'Военный билет'}
-              name={'militaryID'}
-              onChage={onChange}
+                title={'Военный билет'}
+                name={'militaryID'}
+                onChange={onChange}
               />
         )}
       />
 
-<Controller
+          <Controller
             control={control}
             name='deferredEnlistmentCertificate'
             defaultValue={false}
             render={({ field: { onChange } }) => (
               <CheckboxButton
-              title={'Приписное св-во с отсрочкой'}
-              name={'deferredEnlistmentCertificate'}
-              onChage={onChange}
+                title={'Приписное св-во с отсрочкой'}
+                name={'deferredEnlistmentCertificate'}
+                onChange={onChange}
               />
         )}
       />
-          <p className={styles.file}>
-            Кроме заполнения резюме на нашем сайте вы можете загрузить свое резюме в форматах: doc, docx, txt, pdf.
-            Объем файла не более 20 Мб.
-          </p>
           <input type='submit' className={styles.submit} />
         </form>
         <div className={styles.information}>
