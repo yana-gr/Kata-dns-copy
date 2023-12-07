@@ -1,0 +1,50 @@
+.label{
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .label .input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .label:hover .input ~ .span {
+    background-color: #ccc;
+  }
+  
+  .label .input:checked ~ .span {
+    background-color: #FC8507;
+  }
+  .span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+  .span:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .label .input:checked ~ .span:after {
+    display: block;
+  }
+  
+  .label .span:after {
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+  }

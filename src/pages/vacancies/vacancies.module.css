@@ -1,0 +1,119 @@
+.wrapper{
+  margin-top: 25px;
+}
+.main{
+  background-color: #FFFFFF;
+  max-width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 15px;
+  padding-left: 0;
+  border-radius: 8px;
+}
+.title{
+font-size: 22px;
+margin-left: 30px;
+}
+
+.list{
+ display: flex;
+ flex-direction: column;
+}
+.itemlist{
+  margin-bottom: 15px;
+  list-style: none;
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    font-size: 14px;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+
+.img{
+  background: url(../../shared/imgVacansies/monstor.png) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 209px;
+margin-left: 25px;
+}
+.itemlist__img{
+  max-width: 24px;
+  max-height: 24px;
+  padding-right: 5px;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+ 
+  .list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 12px;
+    max-width: 506px;
+  }
+  .itemlist{
+    list-style: none;
+      display: flex;
+      align-items: center;
+      max-width: 238px;
+      font-size: 14px;
+      line-height: 20px;
+      box-sizing: border-box;
+  }
+  .img{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    max-width: 263px;
+    margin-right: -14px;
+    }
+    .title{
+      font-size: 28px;
+      }
+}
+
+@media (min-width: 992px) {
+  .wrapper{
+    display: flex;
+    justify-content: center;
+  }
+  .main{
+    background-color: #FFFFFF;
+    width: 900px;
+    padding: 15px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    position: relative;
+    border-radius: 10px;
+  }
+  .list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 12px;
+    max-width: 506px;
+  }
+  .itemlist{
+    list-style: none;
+      display: flex;
+      align-items: center;
+      max-width: 238px;
+      font-size: 14px;
+      line-height: 20px;
+      box-sizing: border-box;
+  }
+  .img{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    max-width: 263px;
+    margin-right: -14px;
+    }
+  
+  
+  }

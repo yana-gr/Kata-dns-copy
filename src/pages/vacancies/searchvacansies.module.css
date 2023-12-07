@@ -1,0 +1,69 @@
+.wrapper{
+  display: flex;
+}
+.img{
+  width: 20px;
+  height: 20px;
+}
+.input{
+  color: #333;
+  background-color: #F6F6F6;
+  width: 90%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+} 
+.lupa{
+  color: #8c8c8c;
+  font-size: 16px;
+  background-color: #F6F6F6;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin-left: 25px;
+}
+.item{
+  list-style-type: none;
+}
+.link{
+ text-decoration: none;
+ color: #0d61af;
+}
+.name{
+  padding: 3px;
+  font-size: 16px;
+}
+.city{
+  color: #333;
+  padding: 3px;
+}
+.salary{
+  color: #8c8c8c;
+  margin-bottom: 15px;
+}
+.link:hover .salary { 
+  filter: invert(77%) sepia(2%) saturate(12%) hue-rotate(336deg) brightness(92%) contrast(89%);
+}
+.link:hover .name
+   { 
+    filter: invert(66%) sepia(29%) saturate(7328%) hue-rotate(358deg) brightness(101%) contrast(98%);
+  }
+@media (min-width: 768px){
+  .link{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    margin-bottom: 15px;
+  }
+  .link:hover .name,
+  .link:hover .salary
+   { 
+    filter: invert(66%) sepia(29%) saturate(7328%) hue-rotate(358deg) brightness(101%) contrast(98%);
+  }
+}

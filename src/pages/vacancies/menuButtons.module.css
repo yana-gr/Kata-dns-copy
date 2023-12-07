@@ -1,0 +1,124 @@
+.link{
+  margin: 8px;
+  background-color: #EEEEEE;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #4e4e4e;
+  padding: 15px;
+ 
+}
+.menuLinks{
+margin-bottom: 25px;
+}
+.wrapDivider{
+display: none;
+}
+.linkImg{
+display: none;
+}
+.activelink {
+  margin: 8px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #4e4e4e;
+  padding: 15px;
+}
+@media (max-width: 768px){
+  .menuLinks{
+      display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+    }
+}
+@media (min-width: 992px) {
+.menuLinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 5px 0;
+  border-radius: 15px;
+  width: 280px;
+  position: relative;
+  }
+  .link{
+    background-color: #FFFFFF;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0;
+    position: relative;
+  }
+  .link:hover::before {
+    content: "";
+    width: 2px;
+    height: 45px;
+    background-color: #fc8507;
+    position: absolute;
+   left: -10px;
+    
+  }
+  .link:last-of-type {
+   color: #0d61af;
+  }
+  .link:last-of-type .linkImg{
+    position: absolute;
+    right: 0;
+   }
+  .link:hover .linkImg{
+    color: #fc8507;
+    filter: invert(66%) sepia(29%) saturate(7328%) hue-rotate(358deg) brightness(101%) contrast(98%);
+  }
+  .link:hover {
+    color: #fc8507;
+  }
+  .linkImg{
+    display: flex;
+   margin-right: 5px;
+   filter: invert(77%) sepia(2%) saturate(12%) hue-rotate(336deg) brightness(92%) contrast(89%);
+    }
+    .activelink {
+      background-color: #FFFFFF;
+      color: #fc8507;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0;
+    position: relative;
+    }
+    .activelink .linkImg{
+    color: #fc8507;
+    filter: invert(66%) sepia(29%) saturate(7328%) hue-rotate(358deg) brightness(101%) contrast(98%);
+  }
+  .activelink::before {
+    content: "";
+    width: 2px;
+    height: 45px;
+    background-color: #fc8507;
+    position: absolute;
+   left: -10px;
+    
+  }
+
+.wrapDivider{
+  display: block;
+  background-color: #F6F6F6;
+  width: 280px;
+  height: 3px;
+  position: absolute;
+  top: 215px;
+  
+}
+   
+}

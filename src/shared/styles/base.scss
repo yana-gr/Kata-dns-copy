@@ -1,7 +1,11 @@
+@import './fonts.scss';
 @import './mixins.scss';
 
 body {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
+}
+html{
+  background-color: #F6F6F6;
 }
