@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <defs>
+  <symbol height="24" id="svg_13" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+   <path d="m17.75,3c1.79,0 3.25,1.46 3.25,3.25l0,6.88c0,0.6 -0.24,1.17 -0.66,1.59l-5.62,5.62c-0.42,0.42 -0.99,0.66 -1.59,0.66l-6.88,0c-1.79,0 -3.25,-1.46 -3.25,-3.25l0,-11.5c0,-1.79 1.46,-3.25 3.25,-3.25l11.5,0zm0,1.5l-11.5,0c-0.97,0 -1.75,0.78 -1.75,1.75l0,11.5c0,0.97 0.78,1.75 1.75,1.75l6.75,0l0,-3.25c0,-1.73 1.36,-3.15 3.07,-3.24l0.18,-0.01l3.25,0l0,-6.75c0,-0.97 -0.78,-1.75 -1.75,-1.75zm0.69,10l-2.19,0c-0.92,0 -1.67,0.71 -1.74,1.61l-0.01,0.14l0,2.19l3.94,-3.94z" fill="#212121"/>
+  </symbol>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <use id="svg_14" opacity="0.55" transform="rotate(89.7909 63 63) matrix(6.66667 0 0 6.66667 0 0)" x="-2.55" xlink:href="#svg_13" y="-2.55"/>
+ </g>
+</svg>

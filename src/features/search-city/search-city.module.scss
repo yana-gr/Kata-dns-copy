@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+$background-color--main: #f6f6f6;
+$font-color--headers: #000;
+$font-color--main: #333;
+
+.search_city {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 4px 0;
+    color: #4e4e4e;
+  }
+
+  &__button {
+    color: #4e4e4e;
+    background: #f9f9f9;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: 'PT Sans', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1.42857;
+    font-size: 18px;
+    text-align: start;
+  }
+
+  &__icon {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: 992px) {
+  .search_city {
+    display: none;
+  }
+}

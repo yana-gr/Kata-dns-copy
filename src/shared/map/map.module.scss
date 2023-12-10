@@ -1,0 +1,61 @@
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+  margin-top: 300px;
+}
+
+.marker_cluster_small {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 4px solid #fc8507;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+  transform: translate(-25%, -25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.marker_cluster_medium {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 7px solid #fc8507;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+  transform: translate(-25%, -25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.marker_cluster_large {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 7px solid #fc8507;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+  transform: translate(-25%, -25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.route {
+  margin-top: 16px;
+  font-size: 15px;
+}

@@ -1,17 +1,34 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {};
+const initialState = {
+  searchedShops: [],
+  filteredShops: [],
+  focusShop: null,
+  isLoading: false,
+  isError: false,
+};
 
 export const shopSlice = createSlice({
-  name: 'shops',
+  name: 'shopsReducer',
   initialState,
   reducers: {
-    increment: (state) => {
-      state;
+    setSearchedShops(state, action) {
+      state.filteredShops = action.payload.data;
+      state.searchedShops = action.payload.data;
+      state.isError = action.payload.isError;
+      state.isLoading = action.payload.isLoading;
+    },
+    setFilteredShops: (state, action) => ({ ...state, filteredShops: action.payload.filteredShops }),
+    setFocusShop(state, action) {
+      state.focusShop = action.payload;
+    },
+
+    deleteFocusShop(state) {
+      state.focusShop = null;
     },
   },
 });
 
-export const { increment } = shopSlice.actions;
+export const { setSearchedShops, setFilteredShops, setFocusShop, deleteFocusShop } = shopSlice.actions;
 
 export default shopSlice.reducer;

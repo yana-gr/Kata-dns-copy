@@ -1,0 +1,68 @@
+// @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+$background-color--main: #f6f6f6;
+$font-color--headers: #000;
+$font-color--main: #333;
+
+.container {
+  width: 100%;
+  padding: 16px;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+.shop_list__title {
+  padding-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #4e4e4e;
+  line-height: 1.1;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+
+.shop_list__title_posts {
+  padding-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #4e4e4e;
+  line-height: 1.1;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  margin: 0;
+  padding-top: 6px;
+}
+
+.container_not_found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+
+.image_not_found {
+  background: url('https://a.dns-shop.ru/static/12/1l166mw/css/502f45505da2fc318721.png') no-repeat 50%;
+  height: 160px;
+  width: 160px;
+}
+
+.text_not_found {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-top: 8px;
+}
+
+.try_not_found {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 8px;
+}

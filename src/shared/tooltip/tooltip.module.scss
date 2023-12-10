@@ -1,0 +1,31 @@
+.tooltip {
+  &__container_active {
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 3000;
+    margin-top: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.04),
+      0 4px 4px rgba(0, 0, 0, 0.04),
+      0 20px 40px rgba(0, 0, 0, 0.08);
+    width: 250px;
+    font-size: 16px;
+    padding: 16px;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  &__container_hoovered {
+    display: none;
+  }
+
+  &__content {
+    font-family: 'PT Sans', 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333;
+  }
+}

@@ -1,7 +1,6 @@
+import { createBrowserRouter } from 'react-router-dom';
 import Main from 'pages/main';
-import {
-  createBrowserRouter,
-} from 'react-router-dom';
+import ShopListPage from 'pages/shop-list-page';
 
 export const router = createBrowserRouter([
   {
@@ -13,8 +12,17 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <h2>22</h2>
+        element: <h2>22</h2>,
       },
-    ]
+    ],
+  },
+  {
+    path: 'shop-list',
+    children: [
+      {
+        index: true,
+        element: <ShopListPage />,
+      },
+    ],
   },
 ]);
