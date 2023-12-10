@@ -1,5 +1,6 @@
 import { RouterProvider } from 'react-router-dom';
 import { router } from './routing/Routing';
+import '../shared/styles/base.scss';
 import React from 'react';
 import store from '../shared/store/store';
 import { Provider } from 'react-redux';
